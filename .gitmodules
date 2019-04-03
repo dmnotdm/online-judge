@@ -1,0 +1,3 @@
+[submodule "oj-user"]
+	path = oj-user
+	url = git@gitlab.com:zzz-online-judge/oj-user.git
