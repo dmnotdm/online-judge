@@ -1,3 +1,6 @@
 [submodule "oj-user"]
 	path = oj-user
 	url = git@gitlab.com:zzz-online-judge/oj-user.git
+[submodule "oj-problem"]
+	path = oj-problem
+	url = git@gitlab.com:zzz-online-judge/oj-problem.git
