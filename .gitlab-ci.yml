@@ -1,0 +1,28 @@
+stages:
+  - test
+  - deploy
+  - clean
+
+test:
+  stage: test
+  except:
+    - master
+    - /^v\d+\.\d+(\.\d+)?(-\S*)?/
+  script:
+    - mvn clean -B -e test
+
+deploy:
+  stage: deploy
+  except:
+    - master
+    - /^v\d+\.\d+(\.\d+)?(-\S*)?/
+  script:
+    - mvn -B -e deploy -Dmaven.test.skip=true
+
+clean:
+  stage: clean
+  except:
+    - master
+    - /^v\d+\.\d+(\.\d+)?(-\S*)?/
+  script:
+    - mvn clean
