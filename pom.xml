@@ -31,7 +31,16 @@
     </dependencies>
     <!-- @formatter:on -->
 
-    <modules>
-        <module>oj-user</module>
-    </modules>
+    <profiles>
+        <profile>
+            <id>submodules</id>
+            <activation>
+                <property><name>submodules</name></property>
+            </activation>
+            <modules>
+                <module>oj-user</module>
+            </modules>
+        </profile>
+    </profiles>
+
 </project>
