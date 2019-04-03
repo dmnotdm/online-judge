@@ -1,0 +1,45 @@
+/build/
+
+### STS ###
+.apt_generated
+.classpath
+.factorypath
+.project
+.settings
+.springBeans
+
+### IntelliJ IDEA ###
+.idea
+*.iws
+*.iml
+*.ipr
+out/
+logs/
+/out/
+
+### NetBeans ###
+nbproject/private/
+build/
+nbbuild/
+dist/
+nbdist/
+
+### Projects ###
+target
+build-repo/
+bootstrap-*.yml
+classes/production/
+nohup.out
+/tools/nohup.out
+git.properties
+#*.properties
+*.env.json
+
+### OS ###
+.DS_Store
+
+### gitlab-ci ###
+/artifacts.tar.gz
+
+# Ignoring Versioned Files
+# git update-index --assume-unchanged <file>
