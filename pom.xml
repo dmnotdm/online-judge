@@ -65,6 +65,20 @@
 
     <profiles>
         <profile>
+            <id>actuator-dep</id>
+            <activation>
+                <file>
+                    <exists>src/main/resources/bootstrap.yml</exists>
+                </file>
+            </activation>
+            <dependencies>
+                <dependency>
+                    <groupId>org.springframework.boot</groupId>
+                    <artifactId>spring-boot-starter-actuator</artifactId>
+                </dependency>
+            </dependencies>
+        </profile>
+        <profile>
             <id>submodules</id>
             <activation>
                 <property>
