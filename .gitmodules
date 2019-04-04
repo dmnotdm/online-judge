@@ -1,9 +1,9 @@
 [submodule "oj-user"]
 	path = oj-user
-	url = git@gitlab.com:zzz-online-judge/oj-user.git
+	url = git@github.com:dmnotdm/oj-user.git
 [submodule "oj-problem"]
 	path = oj-problem
-	url = git@gitlab.com:zzz-online-judge/oj-problem.git
+	url = git@github.com:dmnotdm/oj-problem.git
 [submodule "oj-core"]
 	path = oj-core
-	url = git@gitlab.com:zzz-online-judge/oj-core.git
+	url = git@github.com:dmnotdm/oj-core.git
