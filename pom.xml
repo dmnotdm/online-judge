@@ -65,18 +65,18 @@
 
     <profiles>
         <profile>
-            <id>actuator-dep</id>
+            <id>service-module-dep</id>
             <activation>
                 <file>
                     <exists>src/main/resources/bootstrap.yml</exists>
                 </file>
             </activation>
+            <!-- @formatter:off -->
             <dependencies>
-                <dependency>
-                    <groupId>org.springframework.boot</groupId>
-                    <artifactId>spring-boot-starter-actuator</artifactId>
-                </dependency>
+                <dependency><groupId>org.springframework.boot</groupId><artifactId>spring-boot-starter-actuator</artifactId></dependency>
+                <dependency><groupId>org.springframework.boot</groupId><artifactId>spring-boot-starter-web</artifactId></dependency>
             </dependencies>
+            <!-- @formatter:on -->
         </profile>
         <profile>
             <id>submodules</id>
@@ -89,6 +89,7 @@
                 <module>oj-core</module>
                 <module>oj-user</module>
                 <module>oj-problem</module>
+                <module>oj-web</module>
             </modules>
         </profile>
     </profiles>

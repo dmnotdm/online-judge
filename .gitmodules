@@ -7,3 +7,6 @@
 [submodule "oj-core"]
 	path = oj-core
 	url = git@github.com:dmnotdm/oj-core.git
+[submodule "oj-web"]
+	path = oj-web
+	url = git@github.com:dmnotdm/oj-web.git
